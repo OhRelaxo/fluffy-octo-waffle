@@ -36,7 +36,11 @@ java {
 }
 
 jar {
+    // Setze den archive base name explizit (moderne API)
+    archiveBaseName.set(project.name)
+
+    // Beim Kopieren/Umbenennen der LICENSE nutzen wir project.name statt der entfernten archivesBaseName-Property
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "${it}_${project.name}" }
     }
 }
