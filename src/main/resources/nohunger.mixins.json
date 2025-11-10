@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nohunger.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "HungerManagerMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
