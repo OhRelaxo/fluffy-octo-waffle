@@ -1,13 +1,15 @@
 # No Hunger Mod
 
-A Minecraft Fabric mod that disables the hunger mechanic, allowing players to play without worrying about food.
+Ein Minecraft Fabric Mod, der die Hunger-Mechanik deaktiviert und Spielern erlaubt, ohne Sorgen um Nahrung zu spielen.
 
-## Features
+_A Minecraft Fabric mod that disables the hunger mechanic, allowing players to play without worrying about food._
 
-- Keeps hunger level at maximum (20)
-- Maintains saturation at maximum (5.0)
-- Prevents hunger from decreasing
-- No need to eat food in the game
+## Features / Funktionen
+
+- Keeps hunger level at maximum (20) / Hält den Hunger-Level auf Maximum (20)
+- Maintains saturation at maximum (5.0) / Hält die Sättigung auf Maximum (5.0)
+- Prevents hunger from decreasing / Verhindert, dass Hunger abnimmt
+- No need to eat food in the game / Keine Notwendigkeit, Nahrung zu essen
 
 ## Installation
 
@@ -16,22 +18,34 @@ A Minecraft Fabric mod that disables the hunger mechanic, allowing players to pl
 3. Download the mod JAR file
 4. Place the JAR file in your `.minecraft/mods` folder
 
-## Building
+## Building / Bauen
 
-To build the mod from source:
+See [BUILD.md](BUILD.md) for detailed build instructions.
+
+**Note**: Building this mod requires internet access to `maven.fabricmc.net`. The build process will download the necessary Fabric dependencies.
+
+To build:
 
 ```bash
+gradle wrapper --gradle-version 8.8
 ./gradlew build
 ```
 
 The built JAR file will be located in `build/libs/`.
 
-## Compatibility
+## How It Works / Wie es funktioniert
+
+See [TECHNICAL.md](TECHNICAL.md) for technical details about how the mod works.
+
+The mod uses a Mixin to intercept Minecraft's hunger update system and keeps the hunger bar full at all times.
+
+## Compatibility / Kompatibilität
 
 - Minecraft Version: 1.20.1
 - Fabric Loader: 0.15.11+
 - Fabric API: 0.92.2+
+- Java: 17+
 
-## License
+## License / Lizenz
 
 This project is licensed under the MIT License - see the LICENSE file for details.
