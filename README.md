@@ -24,10 +24,9 @@ See [BUILD.md](BUILD.md) for detailed build instructions.
 
 **Note**: Building this mod requires internet access to `maven.fabricmc.net`. The build process will download the necessary Fabric dependencies.
 
-To build:
+To build you will need gradle 9 or 8.14 and java 23:
 
 ```bash
-gradle wrapper --gradle-version 8.8
 ./gradlew build
 ```
 
